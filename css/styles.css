@@ -307,7 +307,7 @@ a:hover {
     .project-btn {
         width: 40%;
     }
-    .projects-headline, .contact-heading {
+    .projects-headline {
         padding-top: 10%;
     }
 }
@@ -316,7 +316,7 @@ a:hover {
     .project-btn {
         width: 50%;
     }
-    .projects-headline, .contact-heading {
+    .projects-headline {
         padding-top: 10%;
     }
 }
@@ -324,18 +324,31 @@ a:hover {
 @media (max-width: 767px) {
     .about-text {
         text-align: center;
+        padding-left: 5%;
+    }
+    .intro-icons {
+        padding-right: 0%;
     }
     .project-btn {
         width: 50%;
     }
-    .projects-headline, .contact-heading {
+    .projects-headline {
         padding-top: 15%;
+    }
+    .empty-box {
+        padding: 3%;
     }
 }
 
 @media (max-width: 360px) {
     .project-btn {
         width: 60%;
+    }
+}
+
+@media (max-width: 388px) {
+    .rounded-circle {
+        margin: 2px;
     }
 }
 
