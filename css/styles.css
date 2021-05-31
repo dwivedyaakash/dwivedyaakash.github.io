@@ -262,6 +262,7 @@ a.disabled {
     margin-left: 5%;
     margin-right: 5%;
     padding-bottom: 5%;
+    justify-content: center;
 }
 
 .email-box, .address-box {
@@ -370,23 +371,22 @@ a.disabled {
 
 .footer {
     background-color: #364f6b;
-    padding: 50px 0 20px;
+    padding: 40px 0px;
 }
 
 .footer-link {
-    color: rgba(255, 255, 255, 0.8);
+    color: #fff;
     font-family: Arial, Helvetica, sans-serif;
-    margin: 10px 20px;
     text-decoration: none;
 }
 
 .footer-link:hover {
-    color: #fff;
+    color: #007bff;
 }
 
 .copyright {
     color: #ffffff;
     font-size: 0.9rem;
-    padding: 20px 0;
-    padding-top: 40px;
+    padding-top: 30px;
+    margin-bottom: 0px;
 }
