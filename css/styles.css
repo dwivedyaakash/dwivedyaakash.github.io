@@ -246,6 +246,11 @@ a:hover {
     text-decoration: none;
 }
 
+a.disabled {
+  pointer-events: none;
+  opacity: 0.5;
+}
+
 /******************** Contact ********************/
 
 .contact-head {
