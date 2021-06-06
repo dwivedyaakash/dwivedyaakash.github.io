@@ -108,6 +108,14 @@ p {
     font-style: normal;
 }
 
+.wecodifiers-link {
+    color: #000;
+}
+
+.wecodifiers-link:hover {
+    font-size: 1.8rem;
+}
+
 .no-padding {
     font-size: 1.6rem;
     font-weight: normal;
