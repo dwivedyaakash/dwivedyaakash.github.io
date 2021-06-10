@@ -25,7 +25,7 @@ h2 {
     padding-top: 5%;
 }
 
-h3{
+h3 {
     color: #000000;
 }
 
@@ -131,27 +131,22 @@ p {
 }
 .envelope {
     background: #e25748;
-    color: white;
 }
 .instagram {
     background: #125688;
-    color: white;
 }
 .linkedin {
     background: #007bb5;
-    color: white;
 }
 .github {
     background: #272727;
-    color: white;
 }
 .twitter {
-    background: #55ACEE;
-    color: white;
+    background: #55acee;
 }
 
 .rounded-circle {
-    border-radius: 50%;
+    color: #fff;
     padding: 16px;
     font-size: large;
     width: 50px;
@@ -161,8 +156,8 @@ p {
 }
 
 .rounded-circle:hover {
+    color: #fff;
     text-decoration: none;
-    color: white;
     opacity: 0.7;
 }
 
@@ -268,17 +263,20 @@ a:hover {
     justify-content: center;
 }
 
-.email-box, .address-box {
+.email-box,
+.address-box {
     background: #c4eeff;
     padding: 3%;
 }
 
-.mail-me, .map {
+.mail-me,
+.map {
     padding-bottom: 5%;
     font-size: xx-large;
 }
 
-.mail-me:hover, .map:hover {
+.mail-me:hover,
+.map:hover {
     color: #007bff;
 }
 
@@ -312,7 +310,7 @@ a:hover {
     }
 }
 
-@media (min-width: 992px) and (max-width: 1199px){
+@media (min-width: 992px) and (max-width: 1199px) {
     .project-btn {
         width: 40%;
     }
@@ -365,7 +363,8 @@ a:hover {
     .no-padding {
         font-size: 1.5rem;
     }
-    .hello-text,.intro {
+    .hello-text,
+    .intro {
         font-size: 2.5rem;
     }
 }
@@ -378,13 +377,13 @@ a:hover {
 }
 
 .footer-link {
-    color: #fff;
+    color: rgb(255, 255, 255, 0.8);
     font-family: Arial, Helvetica, sans-serif;
     text-decoration: none;
 }
 
 .footer-link:hover {
-    color: #007bff;
+    color: #fff;
 }
 
 .copyright {
