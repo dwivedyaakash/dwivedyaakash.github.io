@@ -193,6 +193,7 @@ p {
   margin-bottom: 25px;
   padding: 7%;
   width: 100%;
+  transition: all 0.3s ease 0s;
 }
 
 .box-skills:hover img {
@@ -247,6 +248,7 @@ p {
 .website-image {
   width: 100%;
   padding-bottom: 10%;
+  transition: all 0.3s ease 0s;
 }
 
 a:hover {
