@@ -11,38 +11,26 @@ html {
 }
 
 body {
+  color: #000000;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  text-align: center;
   margin: 0;
+  text-align: center;
 }
 
 /******************** Headings ********************/
-
-h1 {
-  color: #000000;
-  font-size: 5.2rem;
-  font-family: "Montserrat";
-  margin: 50 0 0 0;
-  font-weight: 600;
-  line-height: 1.5;
-}
-
 h2 {
-  color: #000000;
   font-weight: bold;
   padding-top: 5%;
 }
 
-h3 {
-  color: #000000;
+a {
+  text-decoration: none;
 }
-
-p {
-  line-height: 2;
+a:hover {
+  text-decoration: none;
 }
 
 /******************** Navbar ********************/
-
 .navbar {
   background-color: #ffffff;
   padding: 1.5%;
@@ -76,19 +64,25 @@ p {
 }
 
 /******************** Containers ********************/
-
 .about-container {
   margin: 0;
-  margin-top: 80px;
-  margin-bottom: 70px;
+  margin-top: 5rem;
+  margin-bottom: 4.5rem;
 }
 
 .container-skills {
   padding: 3% 5% 3% 5%;
 }
 
-/******************** About ********************/
+.box-skills,
+.box-projects {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  box-shadow: 0 8px 32px 0 rgb(0 0 0 / 10%);
+  padding: 30px;
+}
 
+/******************** About ********************/
 .aakash {
   width: 100%;
   position: absolute;
@@ -128,7 +122,6 @@ p {
 }
 
 /******************** Social Icons ********************/
-
 .intro-icons {
   padding-top: 5%;
   padding-left: 0%;
@@ -167,7 +160,6 @@ p {
 }
 
 /******************** Skills ********************/
-
 .skills-heading {
   padding-top: 5%;
   padding-bottom: 3%;
@@ -176,13 +168,6 @@ p {
 
 .skills-box {
   padding-bottom: 5%;
-}
-
-.box-skills {
-  background: rgba(255, 255, 255, 0.25);
-  border-radius: 10px;
-  box-shadow: 0 8px 32px 0 rgb(0 0 0 / 10%);
-  padding: 30px;
 }
 
 .skills-title {
@@ -203,11 +188,14 @@ p {
   transform: scale(1.05);
 }
 
-/******************** Projects ********************/
+.box-skills p {
+  line-height: 2;
+}
 
+/******************** Projects ********************/
 .projects-headline {
-  padding-top: 3%;
   font-size: 2.4rem;
+  padding-top: 3.5rem;
 }
 
 .projects {
@@ -215,13 +203,6 @@ p {
   padding-bottom: 7%;
   margin-left: 0;
   margin-right: 0;
-}
-
-.box-projects {
-  background: rgba(255, 255, 255, 0.25);
-  border-radius: 10px;
-  box-shadow: 0 8px 32px 0 rgb(0 0 0 / 10%);
-  padding: 30px;
 }
 
 .box-projects:hover {
@@ -257,12 +238,7 @@ p {
   transition: all 0.3s ease 0s;
 }
 
-a:hover {
-  text-decoration: none;
-}
-
 /******************** Contact ********************/
-
 .contact-head {
   padding-bottom: 5%;
 }
@@ -283,10 +259,9 @@ a:hover {
 
 .mail-me,
 .map {
-  padding-bottom: 5%;
   font-size: xx-large;
+  padding-bottom: 5%;
 }
-
 .mail-me:hover,
 .map:hover {
   color: #007bff;
@@ -305,50 +280,11 @@ a:hover {
   color: gray;
   font-size: 14px;
 }
-
 .contact-desc a:hover {
   color: #007bff;
 }
 
 /******************** Media Queries ********************/
-
-@media (max-width: 550px) {
-  .skill-row {
-    text-align: center;
-  }
-
-  .skills-icons {
-    float: none;
-    margin-left: auto;
-    margin-right: auto;
-    padding-bottom: 10%;
-  }
-}
-
-@media (max-width: 464px) {
-  .skill-row {
-    width: 70%;
-  }
-}
-
-@media (min-width: 992px) and (max-width: 1199px) {
-  .project-btn {
-    width: 40%;
-  }
-  .projects-headline {
-    padding-top: 10%;
-  }
-}
-
-@media (max-width: 991px) {
-  .project-btn {
-    width: 50%;
-  }
-  .projects-headline {
-    padding-top: 10%;
-  }
-}
-
 @media (max-width: 767px) {
   .about-text {
     text-align: center;
@@ -357,52 +293,43 @@ a:hover {
   .intro-icons {
     padding-right: 0%;
   }
-  .project-btn {
-    width: 50%;
+  .skills-box :hover {
+    transform: scale(1);
+  }
+  .box-projects:hover {
+    transform: scale(1);
   }
   .projects-headline {
-    padding-top: 15%;
+    padding-top: 5rem;
   }
   .empty-box {
     padding: 3%;
   }
 }
 
-@media (max-width: 360px) {
-  .project-btn {
-    width: 60%;
-  }
-}
-
 @media (max-width: 388px) {
+  .hello-text,
+  .intro {
+    font-size: 2.5rem;
+  }
+  .no-padding {
+    font-size: 1.5rem;
+  }
   .rounded-circle {
     margin: 2px;
   }
 }
 
-@media (max-width: 384px) {
-  .no-padding {
-    font-size: 1.5rem;
-  }
-  .hello-text,
-  .intro {
-    font-size: 2.5rem;
-  }
-}
-
 /******************** Footer ********************/
-
 .footer {
   background-color: #364f6b;
-  padding: 40px 0px;
+  padding: 2rem 0;
 }
 
 .footer-link {
-  color: #ffffffe0;
-  font-size: 0.95rem !important;
-  text-decoration: none;
+  color: #ffffff;
+  font-size: 0.95rem;
 }
-
 .footer-link:hover {
   color: #ffffff;
 }
