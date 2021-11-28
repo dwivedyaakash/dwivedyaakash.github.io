@@ -179,8 +179,10 @@ p {
 }
 
 .box-skills {
+  background: rgba(255, 255, 255, 0.25);
+  border-radius: 10px;
+  box-shadow: 0 8px 32px 0 rgb(0 0 0 / 10%);
   padding: 30px;
-  box-shadow: 0px 0 5px rgb(1 41 112 / 8%);
 }
 
 .skills-title {
@@ -216,8 +218,10 @@ p {
 }
 
 .box-projects {
+  background: rgba(255, 255, 255, 0.25);
+  border-radius: 10px;
+  box-shadow: 0 8px 32px 0 rgb(0 0 0 / 10%);
   padding: 30px;
-  box-shadow: 0px 0 5px rgb(1 41 112 / 8%);
 }
 
 .box-projects:hover {
