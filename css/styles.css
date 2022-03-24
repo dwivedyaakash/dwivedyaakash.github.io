@@ -53,16 +53,6 @@ a:hover {
   font-weight: bold;
 }
 
-.dropdown-blogs {
-  background-color: #ffffff;
-}
-
-.dropdown-blogs a {
-  font-size: 1.2rem;
-  font-family: "Montserrat";
-  font-weight: bold;
-}
-
 /******************** Containers ********************/
 .about-container {
   margin: 0;
