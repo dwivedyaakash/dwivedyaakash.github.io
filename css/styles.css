@@ -152,34 +152,23 @@ a:hover {
 /******************** Skills ********************/
 .skills-heading {
   padding-top: 5%;
-  padding-bottom: 3%;
   font-size: 2.2rem;
 }
 
-.skills-box {
-  padding-bottom: 5%;
-}
-
-.skills-title {
-  color: #3f3d3d;
-  font-size: 23px;
+.skills-box h3 {
   font-weight: bold;
+  padding: 1.5rem 0 0.5rem 0;
 }
 
-.skill-assets {
-  margin-bottom: 25px;
-  padding: 7%;
-  width: 100%;
-  transition: all 0.3s ease 0s;
+.skills-box img {
+  border-radius: 0.2rem;
+  height: 2.5rem;
+  margin-bottom: 0.2rem;
 }
 
-.box-skills:hover {
+.skills-box img:hover {
   transition: all 0.3s ease-in-out 0s;
-  transform: scale(1.05);
-}
-
-.box-skills p {
-  line-height: 2;
+  transform: scale(1.1);
 }
 
 /******************** Projects ********************/
@@ -283,7 +272,7 @@ a:hover {
   .intro-icons {
     padding-right: 0%;
   }
-  .skills-box :hover {
+  .skills-box img:hover {
     transform: scale(1);
   }
   .box-projects:hover {
