@@ -44,6 +44,9 @@ a:hover {
 }
 
 .nav-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 0 18px;
 }
 
@@ -51,6 +54,20 @@ a:hover {
   font-size: 1.2rem;
   font-family: "Montserrat";
   font-weight: bold;
+}
+
+#my-resume {
+  background: rgb(54, 79, 107);
+  border-radius: 36px;
+  box-shadow: 2px 5px 10px #a5a5a5;
+  color: #ffffff;
+  font-size: 1rem;
+  padding: 0.6rem;
+}
+
+#my-resume:hover {
+  background: rgb(74, 96, 124);
+  color: #ffffff;
 }
 
 /******************** Containers ********************/
