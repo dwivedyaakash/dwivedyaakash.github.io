@@ -26,6 +26,7 @@ h2 {
 a {
   text-decoration: none;
 }
+
 a:hover {
   text-decoration: none;
 }
@@ -153,15 +154,19 @@ a:hover {
 .envelope {
   background: #e25748;
 }
+
 .instagram {
   background: #125688;
 }
+
 .linkedin {
   background: #007bb5;
 }
+
 .github {
   background: #272727;
 }
+
 .twitter {
   background: #55acee;
 }
@@ -258,6 +263,7 @@ a:hover {
   font-size: xx-large;
   padding-bottom: 5%;
 }
+
 .mail-me:hover,
 .map:hover {
   color: #007bff;
@@ -276,6 +282,7 @@ a:hover {
   color: gray;
   font-size: 14px;
 }
+
 .contact-desc a:hover {
   color: #007bff;
 }
@@ -286,31 +293,39 @@ a:hover {
     text-align: center;
     padding-left: 5%;
   }
+
   .intro-icons {
     padding-right: 0%;
   }
+
   .skills-box img:hover {
     transform: scale(1);
   }
+
   .box-projects:hover {
     transform: scale(1);
   }
+
   .projects-headline {
     padding-top: 5rem;
   }
+
   .empty-box {
     padding: 3%;
   }
 }
 
 @media (max-width: 388px) {
+
   .hello-text,
   .intro {
     font-size: 2.5rem;
   }
+
   .no-padding {
     font-size: 1.5rem;
   }
+
   .rounded-circle {
     margin: 2px;
   }
@@ -326,6 +341,7 @@ a:hover {
   color: #ffffff;
   font-size: 0.95rem;
 }
+
 .footer-link:hover {
   color: #6bcb77;
 }
