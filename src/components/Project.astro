@@ -1,0 +1,22 @@
+<div class='bg-white rounded-xl m-4 p-2 min-[450px]:p-4 flex items-center'>
+  <a href={Astro.props.link} target={Astro.props.target}>
+    <img class='rounded-xl' src={Astro.props.src} alt={Astro.props.name} />
+    <div class='p-2 min-[450px]:p-4'>
+      <h1
+        class='text-gray-600 text-md min-[250px]:text-md min-[450px]:text-lg font-bold'
+      >
+        {Astro.props.name}
+      </h1>
+      <h3
+        class='text-gray-500 text-xs min-[250px]:text-sm min-[450px]:text-base my-1 min-[450px]:my-2'
+      >
+        {Astro.props.desc}
+        <h3
+          class='text-gray-500 text-xs min-[250px]:text-sm min-[450px]:text-base'
+        >
+          Tech stack used is {Astro.props.techStack}
+        </h3>
+      </h3>
+    </div>
+  </a>
+</div>

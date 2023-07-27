@@ -1,0 +1,32 @@
+{
+  "name": "aakash-dwivedy-portfolio",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro",
+    "format": "prettier --write ."
+  },
+  "dependencies": {
+    "@astrojs/react": "^2.2.1",
+    "@astrojs/tailwind": "^4.0.0",
+    "@emailjs/browser": "^3.11.0",
+    "@types/react": "^18.2.15",
+    "@types/react-dom": "^18.2.7",
+    "astro": "^2.9.1",
+    "emailjs": "^4.0.2",
+    "framer-motion": "^10.13.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-icons": "^4.10.1",
+    "tailwindcss": "^3.3.3"
+  },
+  "devDependencies": {
+    "prettier": "^3.0.0",
+    "prettier-plugin-astro": "^0.11.0",
+    "prettier-plugin-tailwindcss": "^0.4.1"
+  }
+}

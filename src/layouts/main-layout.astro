@@ -1,0 +1,52 @@
+---
+import Nav from '../components/Nav';
+---
+
+<html lang='en'>
+  <head>
+    <meta charset='UTF-8' />
+    <meta name='viewport' content='width=device-width, initial-scale=1.0' />
+    <title>Aakash Dwivedy | Portfolio</title>
+    <meta
+      name='description'
+      content="Hello there, I'm Aakash. I am a front-end web developer."
+    />
+    <meta
+      name='keywords'
+      content='HTML,CSS,JavaScript,React,ReactJS,NextJS,TailwindCSS,portfolio,aakashdwivedy,dwivedyaakash,Aakash,Dwivedy'
+    />
+    <!-- Open Graph -->
+    <meta property='og:type' content='website' />
+    <meta property='og:url' content='https://dwivedyaakash.github.io/' />
+    <meta property='og:title' content='Aakash Dwivedy | Portfolio' />
+    <meta
+      property='og:description'
+      content="Hello there, I'm Aakash. I am a front-end web developer."
+    />
+    <meta
+      property='og:image'
+      content='https://raw.githubusercontent.com/dwivedyaakash/dwivedyaakash.github.io/main/public/portfolio.png'
+    />
+    <!-- Twitter -->
+    <meta property='twitter:card' content='summary_large_image' />
+    <meta property='twitter:url' content='https://dwivedyaakash.github.io/' />
+    <meta property='twitter:title' content='Aakash Dwivedy | Portfolio' />
+    <meta
+      property='twitter:description'
+      content="Hello there, I'm Aakash. I am a front-end web developer."
+    />
+    <meta
+      property='twitter:image'
+      content='https://raw.githubusercontent.com/dwivedyaakash/dwivedyaakash.github.io/main/public/portfolio.png'
+    />
+    <!-- Favicon -->
+    <link rel='icon' href='/favicon.png' />
+    <link rel='apple-touch-icon' href='/favicon.png' />
+  </head>
+  <body>
+    <main>
+      <Nav client:load />
+      <slot />
+    </main>
+  </body>
+</html>
