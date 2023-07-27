@@ -1,5 +1,5 @@
-import pkg from 'react-icons/fa6/index.esm.js';
-const { FaGithub, FaLinkedin, FaTwitter, FaLink } = pkg;
+// import pkg from 'react-icons/fa6/index.esm.js';
+// const { FaGithub, FaLinkedin, FaTwitter, FaLink } = pkg;
 
 const Footer = () => {
   const date = new Date();
@@ -14,28 +14,28 @@ const Footer = () => {
             href='https://github.com/dwivedyaakash'
             target='_blank'
           >
-            <FaGithub />
+            {/* <FaGithub /> */}
           </a>
           <a
             className='hover:text-gray-500'
             href='https://www.linkedin.com/in/dwivedyaakash'
             target='_blank'
           >
-            <FaLinkedin />
+            {/* <FaLinkedin /> */}
           </a>
           <a
             className='hover:text-gray-500'
             href='https://twitter.com/dwivedyaakash'
             target='_blank'
           >
-            <FaTwitter />
+            {/* <FaTwitter /> */}
           </a>
           <a
             className='hover:text-gray-500'
             href='https://linktr.ee/dwivedyaakash'
             target='_blank'
           >
-            <FaLink />
+            {/* <FaLink /> */}
           </a>
         </div>
         <h6 className='p-3 text-center text-sm'>
