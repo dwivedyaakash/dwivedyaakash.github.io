@@ -1,4 +1,5 @@
-import { FaGithub, FaLinkedin, FaTwitter, FaLink } from 'react-icons/fa6';
+import pkg from 'react-icons/fa6/index.esm.js';
+const { FaGithub, FaLinkedin, FaTwitter, FaLink } = pkg;
 
 const Footer = () => {
   const date = new Date();
