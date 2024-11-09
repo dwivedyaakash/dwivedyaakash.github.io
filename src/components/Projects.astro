@@ -1,34 +1,44 @@
 ---
 import Project from './Project.astro';
 import codifiers from '/codifiers.png';
-import greenhorn from '/greenhorn.png';
-import portfolio from '/portfolio.png';
+import restaurant from '/restaurant.jpg';
+import portfolio from '/portfolio.jpg';
+import weatherApp from '/weatherApp.png';
 ---
 
 <div id='projects' class='my-20'>
   <h1 class='text-center text-3xl text-gray-700 font-bold mb-8'>My projects</h1>
   <div class='grid md:grid-cols-2 lg:grid-cols-3 mx-2 min-[450px]:mx-14'>
     <Project
+      link={'https://github.com/dwivedyaakash/WeatherApp'}
+      target={'_blank'}
+      src={weatherApp}
+      name='Weather App'
+      desc='Retrieves and displays weather data for the user current location using precise geolocation. Allows users to search and view weather conditions for any city worldwide. Built with MVVM pattern API calls.'
+      techStack='Kotlin and Jetpack Compose.'
+    />
+    <Project
       link={'#'}
       src={portfolio}
       name='Portfolio website'
       desc='A simple and modern personal portfolio website.'
-      techStack='HTML, CSS, Tailwind CSS, JavaScript, ReactJS, and Astro.'
+      techStack='HTML, CSS, TailwindCSS, JavaScript, ReactJS, and Astro.'
     />
     <Project
-      link={'https://codifiers.in'}
+      link={'https://a-react-restaurant.netlify.app'}
+      target={'_blank'}
+      src={restaurant}
+      name='Restaurant Website'
+      desc='A web application to browse and search your favourite restaurants. Add food items to cart. Explored and implemented the Swiggy API.'
+      techStack='HTML, CSS, TailwindCSS, JavaScript, Vite, ReactJS, and Redux.'
+    />
+    <Project
+      link={'https://codifiers.netlify.app'}
       target={'_blank'}
       src={codifiers}
       name='Codifiers'
       desc='Made the website for Codifiers. Fast load time and mobile-friendly website design.'
-      techStack='HTML, CSS, Tailwind CSS, JavaScript, ReactJS, and NextJS.'
-    />
-    <Project
-      link={'#'}
-      src={greenhorn}
-      name='Green Horn'
-      desc='Made a website for Green Horn and their product CyberKind.'
-      techStack='HTML, CSS, JavaScript, and ReactJS.'
+      techStack='HTML, CSS, TailwindCSS, JavaScript, ReactJS, and NextJS.'
     />
   </div>
 </div>
