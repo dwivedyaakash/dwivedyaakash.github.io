@@ -32,13 +32,13 @@ const Contact = () => {
   };
 
   return (
-    <div id='contact' className='text-gray-500'>
-      <h3 className='mb-8 mt-20 text-center text-3xl font-bold text-gray-700'>
+    <div id='contact' className='text-gray-500 dark:text-gray-400'>
+      <h3 className='mb-8 mt-20 text-center text-3xl font-bold text-gray-700 dark:text-gray-200'>
         Get in touch!
       </h3>
       <div className='m-auto grid w-full grid-flow-row items-center justify-center justify-items-center gap-8 md:w-11/12 md:grid-cols-2 md:p-8'>
         <form
-          className='flex w-[70vw] flex-col rounded-xl bg-gray-200 p-4 md:w-full'
+          className='flex w-[70vw] flex-col rounded-xl bg-gray-200 dark:bg-[#111] p-4 md:w-full transition-colors duration-300'
           ref={form}
           onSubmit={sendEmail}
         >
@@ -49,7 +49,7 @@ const Contact = () => {
             value={name}
             onChange={(event) => setName(event.target.value)}
             required
-            className='mb-4 mt-2 rounded-md p-2 focus-visible:outline-1 focus-visible:outline-gray-500'
+            className='mb-4 mt-2 rounded-md p-2 focus-visible:outline-1 focus-visible:outline-gray-500 dark:bg-[#222] dark:text-white dark:focus-visible:outline-[#555]'
           />
           <label>Email</label>
           <input
@@ -58,7 +58,7 @@ const Contact = () => {
             value={mail}
             onChange={(event) => setMail(event.target.value)}
             required
-            className='mb-4 mt-2 rounded-md p-2 focus-visible:outline-1 focus-visible:outline-gray-500'
+            className='mb-4 mt-2 rounded-md p-2 focus-visible:outline-1 focus-visible:outline-gray-500 dark:bg-[#222] dark:text-white dark:focus-visible:outline-[#555]'
           />
           <label>Message</label>
           <textarea
@@ -67,10 +67,10 @@ const Contact = () => {
             value={message}
             onChange={(event) => setMessage(event.target.value)}
             required
-            className='mb-4 mt-2 rounded-md p-2 focus-visible:outline-1 focus-visible:outline-gray-500'
+            className='mb-4 mt-2 rounded-md p-2 focus-visible:outline-1 focus-visible:outline-gray-500 dark:bg-[#222] dark:text-white dark:focus-visible:outline-[#555]'
           />
           <input
-            className='my-3 cursor-pointer rounded-md bg-gray-800 p-2 text-sm text-white hover:bg-black hover:shadow-md md:w-40'
+            className='my-3 cursor-pointer rounded-md bg-gray-800 dark:bg-white p-2 text-sm text-white dark:text-black hover:bg-black dark:hover:bg-gray-300 hover:shadow-md md:w-40 transition-colors'
             type='submit'
             value='Send'
           />

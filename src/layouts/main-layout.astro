@@ -42,8 +42,25 @@ import Nav from '../components/Nav';
     <!-- Favicon -->
     <link rel='icon' type='image/png' href='/favicon.png?v=1' />
     <link rel='apple-touch-icon' type='image/png' href='/favicon.png?v=1' />
+    
+    <!-- Dark Mode Initialization -->
+    <script is:inline>
+      const theme = (() => {
+        if (typeof localStorage !== 'undefined' && localStorage.getItem('theme')) {
+          return localStorage.getItem('theme');
+        }
+        return 'light';
+      })();
+
+      if (theme === 'light') {
+        document.documentElement.classList.remove('dark');
+      } else {
+        document.documentElement.classList.add('dark');
+      }
+      window.localStorage.setItem('theme', theme);
+    </script>
   </head>
-  <body>
+  <body class="bg-[#f0f0f0] dark:bg-black transition-colors duration-300">
     <main>
       <Nav client:load />
       <slot />

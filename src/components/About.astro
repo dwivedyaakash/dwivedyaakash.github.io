@@ -3,17 +3,17 @@ import about from '/aboutMe.jpg';
 ---
 
 <div id='about' class='my-20'>
-  <h1 class='text-center text-3xl text-gray-700 font-bold mb-8'>About me</h1>
+  <h1 class='text-center text-3xl text-gray-700 dark:text-gray-200 font-bold mb-8'>About me</h1>
   <div
     id='grid'
-    class='bg-white rounded-xl grid grid-flow-row items-center justify-center justify-items-center gap-6 lg:grid-cols-2 m-6 min-[300px]:m-10 sm:m-16 p-3 md:p-5'
+    class='bg-white dark:bg-[#111] rounded-xl grid grid-flow-row items-center justify-center justify-items-center gap-6 lg:grid-cols-2 m-6 min-[300px]:m-10 sm:m-16 p-3 md:p-5 transition-colors duration-300'
   >
     <div class='flex justify-center w-full'>
       <img class='w-[75%] sm:w-[65%] md:w-[55%] lg:w-[70%] rounded-xl' src={about} alt='about image' />
     </div>
-    <div class='text-gray-500 p-1 min-[250px]:p-2 min-[450px]:p-4'>
+    <div class='text-gray-500 dark:text-gray-400 p-1 min-[250px]:p-2 min-[450px]:p-4'>
       <h3
-        class='text-base min-[500px]:text-xl min-[850px]::text-2xl font-bold text-gray-700 lg:my-2'
+        class='text-base min-[500px]:text-xl min-[850px]::text-2xl font-bold text-gray-700 dark:text-gray-200 lg:my-2'
       >
         Hi, I'm Aakash Dwivedy,
       </h3>
