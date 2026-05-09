@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 
 const EmailAlertComponent = () => {
   return (
-    <div className='alert alert-success fixed right-0 top-0 flex w-full items-center justify-center bg-slate-200 p-7'>
+    <div className='alert alert-success fixed right-0 top-0 z-50 flex w-full items-center justify-center bg-gray-100 p-7 shadow-md'>
       <svg
         xmlns='http://www.w3.org/2000/svg'
         className='h-6 w-6 shrink-0 stroke-current'

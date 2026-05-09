@@ -3,26 +3,30 @@ import profile from '/aakash.jpg';
 ---
 
 <div
-  class='grid items-center justify-items-center gap-6 grid-flow-row mx-8 sm:mx-16 lg:mx-32 md:grid-cols-2'
+  class='grid items-center gap-8 md:gap-16 mx-6 sm:mx-16 lg:mx-32 md:grid-cols-2'
 >
+  {/* Text Content */}
   <div
-    class='space-y-3 min-[300px]:space-y-4 text-center md:text-left order-1 md:order-1'
+    class='space-y-4 md:space-y-6 text-center md:text-left order-2 md:order-1'
   >
     <h1
-      class='text-2xl sm:text-3xl md:text-5xl font-bold leading-snug text-gray-700'
+      class='text-2xl sm:text-4xl md:text-5xl font-bold tracking-tight text-gray-900'
     >
-      Hello there, <br /> I'm <span class=''>Aakash</span>
+      Hi, I'm Aakash!
     </h1>
-    <h1 class='text-xl sm:text-xl md:text-3xl text-gray-500'>
-      I'm an Android Developer.
-    </h1>
-    <h3 class='text-xs sm:text-sm text-gray-500'>
-      I'm passionate about tech and love making cool mobile apps!
-    </h3>
+    <h2 class='text-base md:text-lg lg:text-xl text-gray-500 font-light leading-relaxed max-w-lg mx-auto md:mx-0'>
+      An Android Developer specializing in Kotlin and Jetpack Compose. Passionate about blending scalable architecture with AI to build highly impactful mobile experiences.
+    </h2>
   </div>
+
+  {/* Image */}
   <div
-    class='text-center -order-1 md:order-2 min-[450px]:w-8/12 md:w-full xl:w-11/12'
+    class='flex justify-center order-1 md:order-2 w-3/4 md:w-full max-w-md mx-auto'
   >
-    <img class='w-full h-auto rounded-full' src={profile} alt='Aakash' />
+    <img 
+      class='w-full h-auto rounded-full shadow-sm object-cover' 
+      src={profile} 
+      alt='Aakash Dwivedy' 
+    />
   </div>
 </div>

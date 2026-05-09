@@ -1,42 +1,58 @@
-<div id='skills' class='my-20'>
-  <h1 class='text-center text-3xl text-gray-700 font-bold mb-8'>My skills</h1>
-  <div class='grid sm:grid-cols-2 md:grid-cols-3'>
-    <div class='m-4 sm:p-4 flex flex-col items-center'>
-      <h3 class='text-lg text-center text-gray-500 mb-6'>
-        Programming languages
-      </h3>
-      <div
-        class='flex gap-4 flex-wrap justify-center items-center bg-slate-200 rounded-xl p-5'
-      >
-        <img
-          src='https://skillicons.dev/icons?i=kotlin,java,js,ts&perline=3'
-          alt='programming languages'
-        />
-      </div>
-    </div>
-    <div class='m-4 sm:p-4 flex flex-col items-center'>
-      <h3 class='text-lg text-center text-gray-500 mb-6'>
-        Frameworks and libraries
-      </h3>
-      <div
-        class='flex gap-4 flex-wrap justify-center items-center bg-slate-200 rounded-xl p-5'
-      >
-        <img
-          src='https://skillicons.dev/icons?i=react,redux,tailwind&perline=4'
-          alt='frameworks and libraries'
-        />
-      </div>
-    </div>
-    <div class='m-4 sm:p-4 flex flex-col items-center'>
-      <h3 class='text-lg text-center text-gray-500 mb-6'>Development tools</h3>
-      <div
-        class='flex gap-4 flex-wrap justify-center items-center bg-slate-200 rounded-xl p-5'
-      >
-        <img
-          src='https://skillicons.dev/icons?i=androidstudio,git,firebase&perline=3'
-          alt='development tools'
-        />
-      </div>
-    </div>
+---
+const skillCategories = [
+  {
+    title: 'Languages',
+    skills: ['Kotlin', 'Java', 'JavaScript', 'TypeScript'],
+  },
+  {
+    title: 'Android Development',
+    skills: [
+      'Android SDK',
+      'XML',
+      'Jetpack Compose',
+      'MVVM & Clean Architecture',
+      'Coroutines & Flow',
+      'RoomDB & Dagger Hilt',
+      'Retrofit & Ktor',
+    ],
+  },
+  {
+    title: 'Cross-Platform',
+    skills: ['React Native', 'Expo', 'Zustand', 'Redux', 'Context API', 'Nativewind'],
+  },
+  {
+    title: 'Tools & Technologies',
+    skills: ['Git', 'Firebase', 'REST APIs', 'WebSockets', 'Postman'],
+  },
+];
+---
+
+<section id='skills' class='my-20'>
+  {/* Section Header */}
+  <div class='mb-8 text-center px-6'>
+    <h1 class='text-3xl font-bold text-gray-700'>Skills</h1>
   </div>
-</div>
+
+  {/* Skills Grid container */}
+  <div class='bg-white rounded-xl grid grid-cols-1 md:grid-cols-2 gap-8 m-6 min-[300px]:m-10 sm:m-16 p-6 md:p-8 lg:p-10'>
+      {
+        skillCategories.map((category, index) => (
+          <div class='flex flex-col'>
+            {/* Category Title */}
+            <h3 class='text-xl font-semibold text-gray-700 mb-4 pb-2'>
+              {category.title}
+            </h3>
+
+            {/* Chips Container */}
+            <div class='flex flex-wrap gap-2 md:gap-3'>
+              {category.skills.map((skill, skillIndex) => (
+                <span class='px-4 py-2 text-gray-700 text-sm font-medium rounded-full border border-gray-300 hover:border-gray-400 hover:-translate-y-0.5 transition-all duration-200 cursor-default'>
+                  {skill}
+                </span>
+              ))}
+            </div>
+          </div>
+        ))
+      }
+    </div>
+</section>
