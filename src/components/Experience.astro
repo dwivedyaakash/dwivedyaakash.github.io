@@ -1,0 +1,67 @@
+---
+const experiences = [
+  {
+    company: "NxtGen Cloud Technologies",
+    role: "Senior Android Developer",
+    period: "Aug 2023 — May 2026",
+    location: "Bangalore, India",
+    description: "Android Developer driving the architecture and execution of secure, enterprise-grade applications across cloud management and real-time communications.",
+    highlights: [
+      "Architected the SpeedCloud management platform from the ground up, utilizing Jetpack Compose and modular Clean Architecture for scalable development.",
+      "Partnered with Palo Alto and Veeam to build the CUP (Critical User Protection) App, optimizing performance and state management via a Single-Activity architecture.",
+      "Engineered low-latency, real-time messaging and video conferencing features by integrating XMPP and WebRTC protocols.",
+      "Strengthened core security within the MYn 'Super App' by developing custom PIN authentication and a secure in-app SMTP email client."
+    ]
+  }
+];
+---
+
+<section id='experience' class='py-8 md:py-12 max-w-7xl mx-auto px-6 lg:px-8'>
+  <h2 class='text-center text-3xl font-bold text-gray-900 dark:text-white mb-10 tracking-tight'>
+    Professional Experience
+  </h2>
+
+  <div class='space-y-12'>
+    {experiences.map((exp) => (
+      <div class='grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-12'>
+        
+        <div class='lg:col-span-4'>
+          <div class='lg:sticky lg:top-24'>
+            <p class='text-sm font-bold uppercase tracking-widest text-gray-500 dark:text-gray-400 mb-1'>
+              {exp.period}
+            </p>
+            <h3 class='text-xl font-bold text-gray-900 dark:text-white'>
+              {exp.company}
+            </h3>
+            <p class='text-base font-semibold text-gray-700 dark:text-gray-300'>
+              {exp.role}
+            </p>
+            <p class='text-xs text-gray-400 dark:text-gray-500 mt-1 italic'>
+              {exp.location}
+            </p>
+          </div>
+        </div>
+
+        <div class='lg:col-span-8 bg-white dark:bg-[#111] rounded-2xl border border-gray-100 dark:border-neutral-800 p-6 sm:p-8 shadow-xl shadow-gray-200/40 dark:shadow-none transition-all duration-300'>
+          <p class='text-sm md:text-base text-gray-600 dark:text-gray-400 leading-relaxed mb-6'>
+            {exp.description}
+          </p>
+          
+          <ul class='space-y-4'>
+            {exp.highlights.map((item) => (
+              <li class='flex gap-3 text-sm md:text-base text-gray-600 dark:text-gray-400'>
+                <span class='text-gray-900 dark:text-white mt-1.5 shrink-0'>
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor" class="w-3.5 h-3.5">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+                  </svg>
+                </span>
+                <span class="leading-relaxed">{item}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
+
+      </div>
+    ))}
+  </div>
+</section>

@@ -1,18 +1,32 @@
 ---
 import Project from './Project.astro';
+import MindStackAI from '/MindStackAI.png';
 import weatherApp from '/weatherApp.png';
 ---
 
-<div id='projects' class='my-20'>
-  <h1 class='text-center text-3xl text-gray-700 dark:text-gray-200 font-bold mb-8'>My projects</h1>
-  <div class='grid md:grid-cols-2 lg:grid-cols-3 mx-2 min-[450px]:mx-14'>
+<section id='projects' class='py-8 md:py-12 max-w-7xl mx-auto px-6 lg:px-8'>
+  
+  <h2 class='text-center text-3xl font-bold text-gray-900 dark:text-white mb-10 tracking-tight'>
+    Projects
+  </h2>
+
+  <div class='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 xl:gap-10'>
+    <Project
+      link={'https://github.com/dwivedyaakash/MindStackAI'} 
+      target={'_blank'}
+      src={MindStackAI} 
+      name='MindStackAI'
+      desc='Engineered a mobile RAG knowledge vault using RoomDB and Cosine Similarity for sub-millisecond local vector retrieval, powering interactive chat via the Gemini API.'
+      techStack='Kotlin, Jetpack Compose, RoomDB, Gemini AI, Vector Search'
+    />
+
     <Project
       link={'https://github.com/dwivedyaakash/WeatherApp'}
       target={'_blank'}
       src={weatherApp}
       name='Weather App'
-      desc='Retrieves and displays weather data for the user current location using precise geolocation. Allows users to search and view weather conditions for any city worldwide. Built with MVVM pattern API calls.'
-      techStack='Kotlin and Jetpack Compose.'
+      desc='Retrieves and displays real-time weather data for the user current location using precise geolocation. Allows users to search and view weather conditions for any city worldwide. Built with MVVM architecture and clean API integration.'
+      techStack='Kotlin, Jetpack Compose'
     />
   </div>
-</div>
+</section>

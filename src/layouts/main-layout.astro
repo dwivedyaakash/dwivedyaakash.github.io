@@ -1,5 +1,5 @@
 ---
-import Nav from '../components/Nav';
+import Nav from '../components/Nav.astro';
 ---
 
 <html lang='en'>
@@ -62,7 +62,7 @@ import Nav from '../components/Nav';
   </head>
   <body class="bg-[#f0f0f0] dark:bg-black transition-colors duration-300">
     <main>
-      <Nav client:load />
+      <Nav />
       <slot />
     </main>
   </body>

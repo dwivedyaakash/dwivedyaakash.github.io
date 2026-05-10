@@ -1,22 +1,38 @@
-<div class='bg-white dark:bg-[#111] rounded-xl m-4 p-2 min-[450px]:p-4 transition-colors duration-300'>
-  <a href={Astro.props.link} target={Astro.props.target}>
-    <img class='rounded-xl' src={Astro.props.src} alt={Astro.props.name} />
-    <div class='p-2 min-[450px]:p-4'>
-      <h1
-        class='text-gray-600 dark:text-gray-200 text-md min-[250px]:text-md min-[450px]:text-lg font-bold'
+<article 
+  class="group flex flex-col bg-white dark:bg-[#111] rounded-2xl border border-gray-100 dark:border-neutral-800 overflow-hidden transition-all duration-300 hover:shadow-xl hover:shadow-gray-200/50 dark:hover:shadow-black/50 h-full"
+>
+  <div class="aspect-video w-full overflow-hidden bg-gray-100 dark:bg-neutral-800 shrink-0 relative">
+    <img 
+      class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" 
+      src={Astro.props.src} 
+      alt={Astro.props.name} 
+    />
+  </div>
+  
+  <div class="p-5 sm:p-6 flex flex-col flex-grow">
+    <h3 class="text-lg sm:text-xl font-bold text-gray-900 dark:text-gray-100 mb-2">
+      {Astro.props.name}
+    </h3>
+    
+    <p class="text-sm sm:text-base text-gray-600 dark:text-gray-400 mb-6">
+      {Astro.props.desc}
+    </p>
+    
+    <div class="mt-auto pt-4 border-t border-gray-100 dark:border-neutral-800 flex items-center justify-between gap-4">
+      
+      <p class="text-xs sm:text-sm font-medium text-gray-500 dark:text-gray-400">
+        {Astro.props.techStack}
+      </p>
+
+      <a 
+        href={Astro.props.link} 
+        target={Astro.props.target}
+        rel={Astro.props.target === '_blank' ? 'noopener noreferrer' : ''}
+        class="shrink-0 inline-flex items-center justify-center px-4 py-2 text-sm font-medium transition-colors bg-gray-900 text-white rounded-full hover:bg-gray-700 dark:bg-white dark:text-gray-900 dark:hover:bg-gray-200"
       >
-        {Astro.props.name}
-      </h1>
-      <h3
-        class='text-gray-500 dark:text-gray-400 text-xs min-[250px]:text-sm min-[450px]:text-base my-1 min-[450px]:my-2'
-      >
-        {Astro.props.desc}
-        <h3
-          class='text-gray-500 dark:text-gray-400 text-xs min-[250px]:text-sm min-[450px]:text-base'
-        >
-          Tech stack used is {Astro.props.techStack}
-        </h3>
-      </h3>
+        View Project
+      </a>
+      
     </div>
-  </a>
-</div>
+  </div>
+</article>

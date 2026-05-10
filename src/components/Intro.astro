@@ -2,31 +2,57 @@
 import profile from '/aakash.jpg';
 ---
 
-<div
-  class='grid items-center gap-8 md:gap-16 mx-6 sm:mx-16 lg:mx-32 md:grid-cols-2'
->
-  {/* Text Content */}
-  <div
-    class='space-y-4 md:space-y-6 text-center md:text-left order-2 md:order-1'
-  >
-    <h1
-      class='text-2xl sm:text-4xl md:text-5xl font-bold tracking-tight text-gray-900 dark:text-white'
-    >
-      Hi, I'm Aakash!
-    </h1>
-    <h2 class='text-base md:text-lg lg:text-xl text-gray-500 dark:text-gray-400 font-light leading-relaxed max-w-lg mx-auto md:mx-0'>
-      An Android Developer specializing in Kotlin and Jetpack Compose. Passionate about blending scalable architecture with AI to build highly impactful mobile experiences.
-    </h2>
-  </div>
+<section class='py-8 md:py-12 max-w-7xl mx-auto px-6 lg:px-8'>
+  <div class='grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-6 items-center'>
+    
+    <div class='lg:col-span-7 flex flex-col space-y-3 md:space-y-4 text-center lg:text-left order-2 lg:order-1'>
+      
+      <h1 class='text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-gray-900 dark:text-white'>
+        Hi, I'm Aakash!
+      </h1>
+      
+      <p class='text-lg sm:text-xl text-gray-600 dark:text-gray-400 font-light leading-relaxed max-w-2xl mx-auto lg:mx-0'>
+        An Android Developer specializing in Kotlin and Jetpack Compose. Passionate about blending scalable architecture with AI to build highly impactful mobile experiences.
+      </p>
 
-  {/* Image */}
-  <div
-    class='flex justify-center order-1 md:order-2 w-3/4 md:w-full max-w-md mx-auto'
-  >
-    <img 
-      class='w-full h-auto rounded-full shadow-sm object-cover' 
-      src={profile} 
-      alt='Aakash Dwivedy' 
-    />
+      <div class='flex flex-wrap items-center justify-center lg:justify-start gap-4 pt-1 md:pt-2'>
+        
+        <a 
+          href="https://drive.google.com/drive/folders/1VhYI8fik-5XF0lFfKG-ErBvXhXZizxkQ?usp=drive_link" 
+          target="_blank"
+          rel="noopener noreferrer"
+          class="group flex items-center gap-2 px-8 py-3 bg-gray-900 text-white dark:bg-white dark:text-gray-900 rounded-full font-medium hover:bg-gray-800 dark:hover:bg-gray-200 transition-all duration-300"
+        >
+          Download Resume
+          <svg 
+            xmlns="http://www.w3.org/2000/svg" 
+            fill="none" 
+            viewBox="0 0 24 24" 
+            stroke-width="2.5" 
+            stroke="currentColor" 
+            class="w-4 h-4 transition-transform duration-300 group-hover:translate-y-0.5"
+          >
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3" />
+          </svg>
+        </a>
+
+        <a 
+          href="#contact" 
+          class="px-8 py-3 bg-transparent border border-gray-300 dark:border-gray-700 text-gray-900 dark:text-white rounded-full font-medium hover:border-gray-900 dark:hover:border-white transition-colors duration-300"
+        >
+          Contact Me
+        </a>
+      </div>
+      
+    </div>
+
+    <div class='lg:col-span-5 flex justify-center order-1 lg:order-2 w-3/4 md:w-full max-w-md mx-auto'>
+      <img 
+        class='w-full h-auto rounded-full shadow-sm object-cover' 
+        src={profile} 
+        alt='Aakash Dwivedy' 
+      />
+    </div>
+    
   </div>
-</div>
+</section>

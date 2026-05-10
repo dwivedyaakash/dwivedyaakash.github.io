@@ -2,42 +2,47 @@
 import about from '/aboutMe.jpg';
 ---
 
-<div id='about' class='my-20'>
-  <h1 class='text-center text-3xl text-gray-700 dark:text-gray-200 font-bold mb-8'>About me</h1>
+<section id='about' class='py-8 md:py-12 max-w-7xl mx-auto px-6 lg:px-8'>
+  <h2 class='text-center text-3xl text-gray-900 dark:text-white font-bold mb-8 tracking-tight'>
+    About me
+  </h2>
+  
   <div
     id='grid'
-    class='bg-white dark:bg-[#111] rounded-xl grid grid-flow-row items-center justify-center justify-items-center gap-6 lg:grid-cols-2 m-6 min-[300px]:m-10 sm:m-16 p-3 md:p-5 transition-colors duration-300'
+    class='bg-white dark:bg-[#111] rounded-2xl border border-gray-100 dark:border-neutral-800 shadow-xl shadow-gray-200/40 dark:shadow-none grid grid-cols-1 lg:grid-cols-12 items-center gap-8 lg:gap-12 p-6 sm:p-8 md:p-10 transition-all duration-300'
   >
-    <div class='flex justify-center w-full'>
-      <img class='w-[75%] sm:w-[65%] md:w-[55%] lg:w-[70%] rounded-xl' src={about} alt='about image' />
+    <div class='lg:col-span-5 flex justify-center w-full relative group'>
+      <img 
+        class='w-[70%] sm:w-[60%] md:w-[50%] lg:w-[85%] rounded-2xl shadow-md transition-transform duration-500 ease-in-out group-hover:scale-[1.02] object-cover' 
+        src={about} 
+        alt='Aakash Dwivedy' 
+      />
     </div>
-    <div class='text-gray-500 dark:text-gray-400 p-1 min-[250px]:p-2 min-[450px]:p-4'>
-      <h3
-        class='text-base min-[500px]:text-xl min-[850px]::text-2xl font-bold text-gray-700 dark:text-gray-200 lg:my-2'
-      >
+    
+    <div class='lg:col-span-7 text-gray-600 dark:text-gray-400 flex flex-col justify-center'>
+      
+      <h3 class='text-xl sm:text-2xl font-bold text-gray-900 dark:text-white mb-1'>
         Hi, I'm Aakash Dwivedy,
       </h3>
-      <h3
-        class='text-sm min-[500px]:text-base min-[850px]:text-lg font-semibold my-1 lg:my-2'
-      >
+      <h4 class='text-base sm:text-lg font-semibold text-gray-700 dark:text-gray-300 mb-4'>
         Senior Android Developer based in Bangalore, India.
-      </h3>
-      <div class='md:space-y-2'>
-        <h3 class='text-xs min-[500px]:text-sm min-[850px]:text-base my-1'>
+      </h4>
+      
+      <div class='space-y-3 md:space-y-4'>
+        <p class='text-sm md:text-base leading-relaxed'>
           With over 2.5+ years of experience, I specialize in building scalable,
           high-performance mobile applications using Kotlin and Jetpack Compose.
-        </h3>
-        <h3 class='text-xs min-[500px]:text-sm min-[850px]:text-base my-1'>
+        </p>
+        <p class='text-sm md:text-base leading-relaxed'>
           I'm currently diving deep into AI/ML and love engineering solutions
           that bridge the gap between complex tech like on-device RAG
           pipelines and seamless user experiences.
-        </h3>
-        <h3
-          class='text-xs min-[500px]:text-sm min-[850px]:text-base my-1 lg:mb-2'
-        >
+        </p>
+        <p class='text-sm md:text-base leading-relaxed'>
           I'm always looking to collaborate on innovative mobile and AI applications.
-        </h3>
+        </p>
       </div>
+      
     </div>
   </div>
-</div>
+</section>
