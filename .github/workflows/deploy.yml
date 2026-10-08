@@ -24,7 +24,7 @@ jobs:
       - name: Install, build, and upload your site
         uses: withastro/action@v3 # Bumped from v0 to v3 (uses modern Node & Artifact actions)
         with:
-          node-version: 20
+          node-version: 22
           # path: . # The root location of your Astro project inside the repository. (optional)
           # package-manager: yarn # Automatically detected based on your lockfile. (optional)
 
