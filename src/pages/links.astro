@@ -102,15 +102,15 @@ const links = [
       .link-item--primary .link-icon { background: rgba(255,255,255,0.15) !important; color: var(--bg) !important; }
       .link-item--primary .link-arrow { color: var(--bg) !important; opacity: 0.7; }
       .link-item--primary:hover { background: var(--text-primary) !important; opacity: 0.88; transform: translateY(-2px); box-shadow: var(--shadow-hover); }
-      .link-item--primary:hover .link-icon { background: rgba(255,255,255,0.25) !important; transform: scale(1.08); }
+      .link-item--primary:hover .link-icon { }
       .link-item--primary:hover .link-arrow { transform: translateX(3px); opacity: 1; }
       .links-list { display: flex; flex-direction: column; gap: 0.875rem; list-style: none; padding: 0; margin: 0 0 2rem; }
       .link-item { display: flex; align-items: center; gap: 1rem; padding: 1rem 1.25rem; background: var(--surface); border: 1px solid var(--border); border-radius: 16px; text-decoration: none; color: var(--text-primary); font-weight: 600; font-size: 0.95rem; box-shadow: var(--shadow); transition: background 0.2s, box-shadow 0.2s, transform 0.2s, border-color 0.2s; position: relative; overflow: hidden; }
       .link-item:hover { background: var(--surface-hover); box-shadow: var(--shadow-hover); transform: translateY(-2px); border-color: var(--text-secondary); }
       .link-icon { flex-shrink: 0; width: 40px; height: 40px; border-radius: 10px; background: rgba(0,0,0,0.05); display: flex; align-items: center; justify-content: center; color: var(--text-primary); transition: background 0.2s, transform 0.2s; }
       .dark .link-icon { background: rgba(255,255,255,0.07); }
-      .link-item:hover .link-icon { background: var(--text-primary); color: var(--bg); transform: scale(1.08); }
-      .link-icon svg { width: 18px; height: 18px; }
+      .link-item:hover .link-icon { }
+      .link-icon svg { width: 18px !important; height: 18px !important; display: block !important; flex-shrink: 0; }
       .link-label { flex: 1; }
       .link-arrow { flex-shrink: 0; width: 16px; height: 16px; color: var(--text-secondary); transition: transform 0.2s, color 0.2s; }
       .link-item:hover .link-arrow { transform: translateX(3px); color: var(--text-primary); }
@@ -163,7 +163,7 @@ const links = [
                   rel={link.url.startsWith('http') ? 'noopener noreferrer' : undefined}
                   aria-label={link.label}
                 >
-                  <span class="link-icon" aria-hidden="true" set:html={link.icon} />
+                  <span class="link-icon" aria-hidden="true"><Fragment set:html={link.icon} /></span>
                   <span class="link-label">{link.label}</span>
                   <svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
